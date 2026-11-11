@@ -1,0 +1,240 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffe4ec, #f8c8dc, #fff0f5);
+    color: #663344;
+    padding: 30px 15px;
+    line-height: 1.8;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(180, 70, 110, 0.15);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #d63375;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #a45b76;
+    font-style: italic;
+}
+
+/* FOTO UTAMA */
+.foto-utama {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 30px;
+    border: 8px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(180, 70, 110, 0.3);
+}
+
+.foto-utama img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* JUDUL */
+h2 {
+    text-align: center;
+    color: #d63375;
+    margin-bottom: 20px;
+}
+
+/* CERITA */
+.cerita {
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.cerita p {
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/* GARIS PEMBATAS */
+.divider {
+    width: 100px;
+    height: 3px;
+    background: #e66b98;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+/* TULISAN PENTING */
+.highlight {
+    color: #d63375;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* GALERI */
+.galeri-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.galeri-section h2 {
+    font-size: 28px;
+}
+
+.keterangan {
+    color: #a45b76;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* SUSUNAN FOTO */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* KARTU FOTO */
+.foto-card {
+    background: white;
+    padding: 10px 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(180, 70, 110, 0.2);
+    transition: 0.3s;
+}
+
+.foto-card:hover {
+    transform: translateY(-7px) rotate(-1deg);
+}
+
+/* GAMBAR */
+.foto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* KETERANGAN FOTO */
+.foto-card p {
+    color: #b34c75;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 35px;
+}
+
+footer p {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.pesan-akhir {
+    color: #d63375;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* LOVE */
+.heart {
+    color: #d63375;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.penutup {
+    color: #a45b76;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foto-card img {
+        height: 180px;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .foto-utama {
+        width: 170px;
+        height: 170px;
+    }
+
+    .cerita p {
+        font-size: 15px;
+    }
+
+    .highlight {
+        font-size: 16px;
+    }
+
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .foto-card {
+        padding: 7px 7px 12px;
+    }
+
+    .foto-card img {
+        height: 135px;
+    }
+
+    .foto-card p {
+        font-size: 12px;
+    }
+}
